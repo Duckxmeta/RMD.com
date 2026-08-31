@@ -1,0 +1,100 @@
+"use client";
+
+import React from "react";
+import { Check, Phone, Sparkles } from "lucide-react";
+import { siteConfig } from "@/lib/content";
+
+export function PackagesSection() {
+  return (
+    <section id="packages" className="py-20 bg-dark-950 border-b border-dark-700/60 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div className="inline-flex items-center space-x-2 bg-red-950/80 border border-red-800/60 px-3.5 py-1.5 rounded-full text-xs font-bold text-red-400 uppercase tracking-widest">
+            <span>Priced Packages</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-white tracking-tight">
+            Transparent Detailing Packages
+          </h2>
+          <p className="text-gray-400 text-base sm:text-lg">
+            Choose the perfect mobile detailing service level for your car, truck, or SUV.
+          </p>
+        </div>
+
+        {/* 3 Package Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          {siteConfig.packages.map((pkg) => (
+            <div
+              key={pkg.id}
+              className={`relative flex flex-col rounded-2xl p-8 transition-all duration-300 ${
+                pkg.popular
+                  ? "bg-gradient-to-b from-dark-850 to-dark-900 border-2 border-red-600 shadow-xl shadow-red-950/50 lg:-translate-y-3"
+                  : "bg-dark-900 border border-dark-700 hover:border-dark-600 shadow-lg"
+              }`}
+            >
+              {/* Most Popular Badge */}
+              {pkg.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-600 to-red-700 text-white font-black text-xs px-4 py-1.5 rounded-full shadow-lg tracking-wider flex items-center space-x-1">
+                  <Sparkles className="w-3.5 h-3.5 fill-current" />
+                  <span>{pkg.badge || "MOST POPULAR"}</span>
+                </div>
+              )}
+
+              {/* Package Header */}
+              <div className="border-b border-dark-700/80 pb-6 mb-6">
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">
+                  {pkg.name}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-400 min-h-[38px]">
+                  {pkg.description}
+                </p>
+
+                {/* Price Lockup */}
+                <div className="mt-6 flex items-baseline space-x-2">
+                  <span className="text-4xl sm:text-5xl font-heading font-black text-white">
+                    {pkg.price}
+                  </span>
+                  <span className="text-xs text-gray-400 font-medium">
+                    (Placeholder rate)
+                  </span>
+                </div>
+              </div>
+
+              {/* Features List */}
+              <div className="flex-1 space-y-3 mb-8">
+                <p className="text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
+                  What’s Included:
+                </p>
+                {pkg.features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start space-x-3 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                    <span className="leading-snug">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <a
+                href={siteConfig.phoneTel}
+                className={`w-full flex items-center justify-center space-x-2 font-bold py-3.5 rounded-xl transition-all shadow-md ${
+                  pkg.popular
+                    ? "bg-red-600 hover:bg-red-500 text-white shadow-red-950/60"
+                    : "bg-dark-800 hover:bg-dark-700 text-white border border-gray-700 hover:border-gray-500"
+                }`}
+              >
+                <Phone className="w-4 h-4 fill-current" />
+                <span>{pkg.ctaText}</span>
+              </a>
+            </div>
+          ))}
+        </div>
+
+        {/* Note under packages */}
+        <div className="mt-12 text-center text-xs text-gray-400 max-w-xl mx-auto">
+          * Package prices vary based on vehicle size, condition, and location. Contact us directly for exact custom estimate.
+        </div>
+      </div>
+    </section>
+  );
+}

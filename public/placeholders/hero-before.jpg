@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F131D" />
+        <stop offset="100%" stop-color="#07080C" />
+      </linearGradient>
+      <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#4B5563" />
+        <stop offset="100%" stop-color="#EF4444" />
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+      </pattern>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="1000" height="700" fill="url(#bg)" />
+    <rect width="1000" height="700" fill="url(#grid)" />
+    
+    <!-- Decorative Shimmer Lines -->
+    <path d="M -100 100 L 1100 600" stroke="#4B5563" stroke-width="1.5" opacity="0.15" stroke-dasharray="10 15" />
+    <path d="M 100 -50 L 950 800" stroke="#FFFFFF" stroke-width="1" opacity="0.08" />
+
+    <!-- Center Badge Container -->
+    <rect x="280" y="240" width="440" height="220" rx="16" fill="#131722" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+    
+    <!-- Badge Header Tag -->
+    <rect x="310" y="260" width="140" height="26" rx="13" fill="url(#accentGrad)" />
+    <text x="380" y="277" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle">BEFORE PLACEHOLDER</text>
+
+    <!-- Main Title -->
+    <text x="500" y="330" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="middle">BEFORE DETAIL</text>
+    
+    <!-- Subtitle / Filename indicator -->
+    <text x="500" y="365" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Unwashed surface, dirt buildup & swirls</text>
+    <text x="500" y="395" fill="#6B7280" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Replace with client media file in /public/placeholders/</text>
+    
+    <!-- Outer Border -->
+    <rect width="998" height="698" x="1" y="1" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" rx="4" />
+  </svg>

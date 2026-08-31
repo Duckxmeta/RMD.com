@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+  </defs>
+  <!-- Logo Icon Badge -->
+  <rect x="10" y="15" width="50" height="50" rx="12" fill="url(#logoGrad)" />
+  <!-- Diamond / Polish shine -->
+  <path d="M 35 25 L 45 40 L 35 55 L 25 40 Z" fill="#FFFFFF" opacity="0.95" />
+  <circle cx="35" cy="40" r="4" fill="#DC2626" />
+
+  <!-- Typography -->
+  <text x="72" y="38" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="900" letter-spacing="1">RELENTLESS</text>
+  <text x="72" y="55" fill="#DC2626" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="2">MOBILE DETAILS</text>
+</svg>
