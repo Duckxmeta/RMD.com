@@ -265,12 +265,12 @@ export const siteConfig = {
       alt: "Clean front seat interior",
     },
     {
-      id: "gal-int-4",
-      title: "Interior — Carpet & Mat Vac",
-      category: "Interior",
+      id: "gal-eng-1",
+      title: "Engine Bay Degreased & Dressed",
+      category: "Engine Bay",
       imagePath: "/placeholders/gallery-05.jpg",
-      caption: "Interior floor carpet detail",
-      alt: "Clean interior carpet",
+      caption: "Engine bay wiped down, degreased, and dressed",
+      alt: "Engine bay degreased and dressed with EcoBoost cover",
     },
     {
       id: "gal-ext-2",

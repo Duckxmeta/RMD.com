@@ -9,7 +9,7 @@ export function GallerySection() {
   const [selectedFilter, setSelectedFilter] = useState<string>("All");
   const [activeLightbox, setActiveLightbox] = useState<GalleryItem | null>(null);
 
-  const categories = ["All", "Headlights", "Interior", "Exterior"];
+  const categories = ["All", "Headlights", "Interior", "Exterior", "Engine Bay"];
 
   const filteredGallery = selectedFilter === "All"
     ? siteConfig.gallery
