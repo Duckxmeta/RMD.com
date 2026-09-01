@@ -2,6 +2,7 @@ import { HeroBeforeAfter } from "@/components/HeroBeforeAfter";
 import { TrustStrip } from "@/components/TrustStrip";
 import { PackagesSection } from "@/components/PackagesSection";
 import { AddonServices } from "@/components/AddonServices";
+import { PaintCeramicShowcase } from "@/components/PaintCeramicShowcase";
 import { HeadlightShowcase } from "@/components/HeadlightShowcase";
 import { VideoShowcase } from "@/components/VideoShowcase";
 import { GallerySection } from "@/components/GallerySection";
@@ -16,6 +17,7 @@ export default function Home() {
       <TrustStrip />
       <PackagesSection />
       <AddonServices />
+      <PaintCeramicShowcase />
       <HeadlightShowcase />
       <VideoShowcase />
       <GallerySection />
