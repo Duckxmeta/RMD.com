@@ -2,6 +2,7 @@ import { HeroBeforeAfter } from "@/components/HeroBeforeAfter";
 import { TrustStrip } from "@/components/TrustStrip";
 import { PackagesSection } from "@/components/PackagesSection";
 import { AddonServices } from "@/components/AddonServices";
+import { HeadlightShowcase } from "@/components/HeadlightShowcase";
 import { VideoShowcase } from "@/components/VideoShowcase";
 import { GallerySection } from "@/components/GallerySection";
 import { ReviewsSection } from "@/components/ReviewsSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <TrustStrip />
       <PackagesSection />
       <AddonServices />
+      <HeadlightShowcase />
       <VideoShowcase />
       <GallerySection />
       <ReviewsSection />

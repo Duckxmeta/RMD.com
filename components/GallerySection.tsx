@@ -9,7 +9,7 @@ export function GallerySection() {
   const [selectedFilter, setSelectedFilter] = useState<string>("All");
   const [activeLightbox, setActiveLightbox] = useState<GalleryItem | null>(null);
 
-  const categories = ["All", "Exterior", "Interior", "Paint Correction", "Ceramic"];
+  const categories = ["All", "Headlights", "Exterior", "Interior", "Paint Correction", "Ceramic"];
 
   const filteredGallery = selectedFilter === "All"
     ? siteConfig.gallery
@@ -49,7 +49,7 @@ export function GallerySection() {
           </div>
         </div>
 
-        {/* 8-Image Responsive Grid */}
+        {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredGallery.map((item) => (
             <div
@@ -129,9 +129,6 @@ export function GallerySection() {
                 <h4 className="text-lg font-bold text-white">{activeLightbox.title}</h4>
                 <p className="text-xs text-gray-400">{activeLightbox.caption}</p>
               </div>
-              <span className="text-xs font-mono bg-dark-800 text-red-400 px-3 py-1 rounded-md border border-dark-700 self-start sm:self-auto">
-                Placeholder Asset: {activeLightbox.imagePath}
-              </span>
             </div>
           </div>
         </div>

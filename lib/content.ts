@@ -83,7 +83,8 @@ export const siteConfig = {
       "Car Detailing Jordan Kinnett Houston Stephens",
       "Mobile Wash Cookeville",
       "Paint Correction Upper Cumberland",
-      "Ceramic Coating Cookeville"
+      "Ceramic Coating Cookeville",
+      "Headlight Restoration Cookeville"
     ],
   },
 
@@ -200,6 +201,38 @@ export const siteConfig = {
 
   gallery: [
     {
+      id: "gal-hl-1",
+      title: "Headlight Restoration Before (Oxidized)",
+      category: "Headlights",
+      imagePath: "/headlights/headlightB1.jpeg",
+      caption: "Before Restoration — Heavily oxidized lens",
+      alt: "Oxidized foggy headlight before restoration",
+    },
+    {
+      id: "gal-hl-2",
+      title: "Headlight Restoration After (Restored)",
+      category: "Headlights",
+      imagePath: "/headlights/headlightA1.jpeg",
+      caption: "After Restoration — Crystal clear clarity",
+      alt: "Restored crystal clear headlight lens",
+    },
+    {
+      id: "gal-hl-3",
+      title: "Headlight Restoration Before (Cloudy)",
+      category: "Headlights",
+      imagePath: "/headlights/headlightB2.jpeg",
+      caption: "Before Restoration — Clouded lens surface",
+      alt: "Cloudy yellow headlight before detail",
+    },
+    {
+      id: "gal-hl-4",
+      title: "Headlight Restoration After (Sealed)",
+      category: "Headlights",
+      imagePath: "/headlights/headlightA2.jpeg",
+      caption: "After Restoration — UV sealed finish",
+      alt: "Polished and UV sealed headlight lens",
+    },
+    {
       id: "gal-1",
       title: "Paint Correction & Gloss",
       category: "Paint Correction",
@@ -230,38 +263,6 @@ export const siteConfig = {
       imagePath: "/placeholders/gallery-04.jpg",
       caption: "Ceramic — Relentless Mobile Details",
       alt: "Ceramic coating water beading",
-    },
-    {
-      id: "gal-5",
-      title: "Headlight Restoration",
-      category: "Headlights",
-      imagePath: "/placeholders/gallery-05.jpg",
-      caption: "Headlights — Relentless Mobile Details",
-      alt: "Restored clear headlight lens",
-    },
-    {
-      id: "gal-6",
-      title: "Full Exterior Hand Wash & Wax",
-      category: "Exterior",
-      imagePath: "/placeholders/gallery-06.jpg",
-      caption: "Exterior — Relentless Mobile Details",
-      alt: "Hand washed and waxed vehicle exterior",
-    },
-    {
-      id: "gal-7",
-      title: "Interior Carpet Shampoo & Vac",
-      category: "Interior",
-      imagePath: "/placeholders/gallery-07.jpg",
-      caption: "Interior — Relentless Mobile Details",
-      alt: "Shampooed interior carpets and trunk",
-    },
-    {
-      id: "gal-8",
-      title: "Engine Bay Degreased & Dressed",
-      category: "Exterior",
-      imagePath: "/placeholders/gallery-08.jpg",
-      caption: "Engine Bay — Relentless Mobile Details",
-      alt: "Clean and dressed engine bay",
     },
   ] as GalleryItem[],
 
