@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Sparkles, ShieldCheck, Gauge, Sun, Dog, CalendarSync, Phone } from "lucide-react";
+import { Sparkles, ShieldCheck, Sun, Phone, MessageSquare } from "lucide-react";
 import { siteConfig, AddonItem } from "@/lib/content";
 
 export function AddonServices() {
@@ -11,14 +11,8 @@ export function AddonServices() {
         return <Sparkles className="w-6 h-6 text-red-500" />;
       case "ShieldCheck":
         return <ShieldCheck className="w-6 h-6 text-red-500" />;
-      case "Gauge":
-        return <Gauge className="w-6 h-6 text-red-500" />;
       case "Sun":
         return <Sun className="w-6 h-6 text-red-500" />;
-      case "Dog":
-        return <Dog className="w-6 h-6 text-red-500" />;
-      case "CalendarSync":
-        return <CalendarSync className="w-6 h-6 text-red-500" />;
       default:
         return <Sparkles className="w-6 h-6 text-red-500" />;
     }
@@ -29,22 +23,22 @@ export function AddonServices() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <div className="inline-flex items-center space-x-2 bg-dark-800 border border-red-500/30 px-3 py-1 rounded-full text-xs font-bold text-red-400 uppercase tracking-widest mb-3">
               <span>Specialty Add-Ons</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-black text-white">
-              Add-On & Specialty Services
+              Add-On Services
             </h2>
           </div>
           <p className="text-gray-400 text-sm max-w-md">
-            Upgrade any package with targeted restorations, multi-year paint protection, or pet hair remediation.
+            Upgrade any mobile detail with paint correction, ceramic hydrophobic protection, or headlight clarity restoration.
           </p>
         </div>
 
-        {/* 6 Addons Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 3 Addons Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {siteConfig.addons.map((addon: AddonItem) => (
             <div
               key={addon.id}
@@ -55,7 +49,7 @@ export function AddonServices() {
                   <div className="p-3 bg-red-950/50 border border-red-800/40 rounded-xl group-hover:scale-105 transition-transform">
                     {getIcon(addon.iconName)}
                   </div>
-                  <span className="text-xs font-bold text-red-400 bg-red-950/60 border border-red-800/30 px-2.5 py-1 rounded-full">
+                  <span className="text-xs font-bold text-red-400 bg-red-950/60 border border-red-800/30 px-3 py-1 rounded-full">
                     {addon.price}
                   </span>
                 </div>
@@ -68,13 +62,23 @@ export function AddonServices() {
                 </p>
               </div>
 
-              <a
-                href={siteConfig.phoneTel}
-                className="inline-flex items-center space-x-2 text-xs font-bold text-gray-300 hover:text-white group-hover:text-red-400 transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5" />
-                <span>Inquire for quote &rarr;</span>
-              </a>
+              <div className="flex items-center space-x-3 pt-2">
+                <a
+                  href={siteConfig.phoneTel}
+                  className="flex-1 flex items-center justify-center space-x-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-bold py-2.5 rounded-lg transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>Call for quote</span>
+                </a>
+                
+                <a
+                  href={siteConfig.phoneSms}
+                  className="flex-1 flex items-center justify-center space-x-1.5 bg-dark-800 hover:bg-dark-700 text-gray-200 text-xs font-semibold py-2.5 rounded-lg border border-dark-700 transition-colors"
+                >
+                  <MessageSquare className="w-3.5 h-3.5 text-red-400" />
+                  <span>Text</span>
+                </a>
+              </div>
             </div>
           ))}
         </div>

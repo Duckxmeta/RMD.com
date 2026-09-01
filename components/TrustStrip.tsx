@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Truck, MapPin, Award, ShieldCheck } from "lucide-react";
+import { Truck, MapPin, Award, CreditCard } from "lucide-react";
 import { siteConfig } from "@/lib/content";
 
 export function TrustStrip() {
@@ -9,7 +9,7 @@ export function TrustStrip() {
     <Truck key="truck" className="w-6 h-6 text-red-500" />,
     <MapPin key="map" className="w-6 h-6 text-red-500" />,
     <Award key="award" className="w-6 h-6 text-red-500" />,
-    <ShieldCheck key="shield" className="w-6 h-6 text-red-500" />,
+    <CreditCard key="card" className="w-6 h-6 text-red-500" />,
   ];
 
   return (
@@ -25,16 +25,9 @@ export function TrustStrip() {
                 {icons[index]}
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center space-x-1.5">
-                  <h3 className="font-heading font-bold text-base text-white">
-                    {point.title}
-                  </h3>
-                  {point.isPlaceholder && (
-                    <span className="text-[10px] bg-dark-700 text-gray-400 px-1.5 py-0.5 rounded font-mono">
-                      Placeholder
-                    </span>
-                  )}
-                </div>
+                <h3 className="font-heading font-bold text-base text-white">
+                  {point.title}
+                </h3>
                 <p className="text-xs text-gray-400 mt-0.5 leading-snug">
                   {point.subtitle}
                 </p>

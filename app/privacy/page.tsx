@@ -51,7 +51,7 @@ export default function PrivacyPage() {
           <section className="space-y-2">
             <h2 className="text-lg font-bold text-white">Contact & Mobile Messaging</h2>
             <p>
-              By providing your mobile phone number, you consent to receive direct phone calls or text messages regarding your mobile detailing appointment. You may opt-out of messages at any time by notifying {siteConfig.ownerTeam} at <a href={siteConfig.emailMailto} className="text-red-400 hover:underline">{siteConfig.email}</a>.
+              By providing your mobile phone number, you consent to receive direct phone calls or text messages regarding your mobile detailing appointment. You may opt-out of messages at any time by contacting {siteConfig.owner} at <a href={siteConfig.phoneTel} className="text-red-400 font-bold">{siteConfig.phone}</a>.
             </p>
           </section>
         </div>

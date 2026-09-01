@@ -2,11 +2,11 @@
 
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
-import { Phone, ArrowRight, Sparkles, MoveHorizontal, CheckCircle2 } from "lucide-react";
+import { Phone, MessageSquare, ArrowRight, Sparkles, MoveHorizontal, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/lib/content";
 
 export function HeroBeforeAfter() {
-  const [sliderPosition, setSliderPosition] = useState(50); // percentage 0-100
+  const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -67,42 +67,54 @@ export function HeroBeforeAfter() {
             <div className="inline-flex items-center space-x-2 bg-dark-800/80 border border-red-500/30 px-3.5 py-1.5 rounded-full">
               <Sparkles className="w-4 h-4 text-red-400 animate-pulse" />
               <span className="text-xs sm:text-sm font-semibold text-gray-200 tracking-wide">
-                Mobile Detailing • We Come To You
+                Locally Owned by Jordan Kinnett • We Come To You
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-black text-white leading-[1.1] tracking-tight">
-              Cookeville’s mobile detail, <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">done on your schedule.</span>
+              Cookeville’s premier <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">mobile detail.</span>
             </h1>
 
             {/* Subhead */}
-            <p className="text-lg sm:text-xl text-gray-300 font-normal leading-relaxed max-w-2xl">
+            <p className="text-lg sm:text-xl text-gray-200 font-semibold leading-relaxed">
               {siteConfig.heroSubhead}
+            </p>
+
+            <p className="text-sm text-gray-400 leading-relaxed max-w-2xl">
+              Interior, exterior, full details, paint correction, ceramic coating, and headlight restoration. Delivered straight to your driveway or workplace in Cookeville & Upper Cumberland.
             </p>
 
             {/* Service requirement note */}
             <div className="flex items-start space-x-2.5 bg-dark-900/80 border border-dark-700/80 p-3 rounded-lg text-xs sm:text-sm text-gray-300">
               <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
-              <span>{siteConfig.requirementLine}</span>
+              <span>We come to your home or work. Water and power access preferred.</span>
             </div>
 
             {/* Action CTAs */}
-            <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-4 pt-2">
+            <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-3 pt-2">
               <a
                 href={siteConfig.phoneTel}
-                className="flex items-center justify-center space-x-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold text-base px-7 py-4 rounded-xl shadow-lg shadow-red-950/70 transform hover:-translate-y-0.5 transition-all"
+                className="flex items-center justify-center space-x-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold text-base px-6 py-4 rounded-xl shadow-lg shadow-red-950/70 transform hover:-translate-y-0.5 transition-all"
               >
                 <Phone className="w-5 h-5 fill-current" />
-                <span>Call / Text {siteConfig.phone}</span>
+                <span>Call {siteConfig.phone}</span>
+              </a>
+
+              <a
+                href={siteConfig.phoneSms}
+                className="flex items-center justify-center space-x-2 bg-dark-800 hover:bg-dark-700 border border-red-500/40 text-gray-100 font-semibold text-base px-5 py-4 rounded-xl transition-colors"
+              >
+                <MessageSquare className="w-4 h-4 text-red-400" />
+                <span>Text Us</span>
               </a>
 
               <a
                 href="#packages"
-                className="flex items-center justify-center space-x-2 bg-dark-800 hover:bg-dark-700 border border-gray-700 hover:border-gray-500 text-gray-100 font-semibold text-base px-6 py-4 rounded-xl transition-colors"
+                className="flex items-center justify-center space-x-1.5 text-xs text-gray-400 hover:text-white transition-colors py-2 px-3"
               >
-                <span>Jump to packages</span>
-                <ArrowRight className="w-4 h-4 text-gray-400" />
+                <span>View packages</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </a>
             </div>
           </div>
@@ -131,7 +143,7 @@ export function HeroBeforeAfter() {
                 <div className="absolute inset-0 w-full h-full">
                   <Image
                     src="/placeholders/hero-after.jpg"
-                    alt="After detailing - paint corrected high gloss finish placeholder"
+                    alt="After detailing - Relentless Mobile Details"
                     fill
                     className="object-cover"
                     priority
@@ -149,7 +161,7 @@ export function HeroBeforeAfter() {
                   <div className="relative w-full h-full min-w-full">
                     <Image
                       src="/placeholders/hero-before.jpg"
-                      alt="Before detailing - unwashed vehicle placeholder"
+                      alt="Before detailing - Relentless Mobile Details"
                       fill
                       className="object-cover"
                       priority

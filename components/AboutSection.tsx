@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, ShieldCheck, MapPin, Wrench } from "lucide-react";
+import { CheckCircle2, MapPin, Wrench } from "lucide-react";
 import { siteConfig } from "@/lib/content";
 
 export function AboutSection() {
@@ -25,17 +25,17 @@ export function AboutSection() {
 
               <div className="space-y-4 pt-2">
                 {siteConfig.about.bulletPoints.map((bp, i) => (
-                  <div key={i} className="flex items-start space-x-3 text-sm text-gray-300">
+                  <div key={i} className="flex items-start space-x-3 text-sm text-gray-200">
                     <CheckCircle2 className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                     <span>{bp}</span>
                   </div>
                 ))}
               </div>
 
-              {/* Requirement Box */}
+              {/* Service Requirement Box */}
               <div className="mt-6 p-4 rounded-xl bg-dark-900 border border-red-900/40 text-xs sm:text-sm text-red-200">
                 <span className="font-bold text-red-400 block mb-1">Service Requirement Note:</span>
-                {siteConfig.requirementLine}
+                We come to your home or work. Water and power access preferred.
               </div>
             </div>
           </div>
@@ -61,15 +61,15 @@ export function AboutSection() {
             {/* Service Area Pill Badges */}
             <div className="pt-4 border-t border-dark-800">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-3">
-                Serving Communities Across Upper Cumberland:
+                Serving Location:
               </span>
               <div className="flex flex-wrap gap-2">
                 {siteConfig.serviceAreas.map((area) => (
                   <span
                     key={area}
-                    className="flex items-center space-x-1.5 bg-dark-800 border border-dark-700 text-gray-200 text-xs font-semibold px-3 py-1.5 rounded-lg"
+                    className="flex items-center space-x-1.5 bg-dark-800 border border-dark-700 text-gray-200 text-xs font-semibold px-3.5 py-1.5 rounded-lg"
                   >
-                    <MapPin className="w-3 h-3 text-red-500" />
+                    <MapPin className="w-3.5 h-3.5 text-red-500" />
                     <span>{area}</span>
                   </span>
                 ))}
