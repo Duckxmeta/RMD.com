@@ -44,11 +44,13 @@ export const siteConfig = {
   siteUrl: "https://relentlessmobiledetails.com",
   phone: "(931) 284-9355",
   phoneRaw: "9312849355",
-  phoneTel: "tel:9312849355",
-  phoneSms: "sms:9312849355",
+  phoneInt: "+19312849355",
+  phoneTel: "tel:+19312849355",
+  phoneSms: "sms:+19312849355",
   
   social: {
     facebook: "https://www.facebook.com/RelentlessMobileDetails",
+    messenger: "https://m.me/RelentlessMobileDetails",
     tiktok: "https://www.tiktok.com/@relentlessmobiledetails",
     google: "https://share.google/rQXnT7gzP4VrXdZph",
   },
