@@ -23,12 +23,12 @@ export function Header() {
         
         {/* Brand Logo & Wordmark */}
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="relative w-10 h-10 bg-gradient-to-br from-red-600 to-red-900 rounded-xl p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-200">
+          <div className="relative w-12 h-12 rounded-xl overflow-hidden p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-200 shrink-0">
             <Image
-              src="/placeholders/logo.svg"
+              src="/placeholders/logo.jpg"
               alt="Relentless Mobile Details Logo"
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               className="w-full h-full object-contain"
               priority
             />

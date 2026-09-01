@@ -18,12 +18,12 @@ export function Footer() {
           {/* Col 1: Brand & Ownership Info */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="w-9 h-9 bg-gradient-to-br from-red-600 to-red-900 rounded-xl p-0.5 shadow-md">
+              <div className="w-10 h-10 rounded-xl overflow-hidden p-0.5 shadow-md shrink-0">
                 <Image
-                  src="/placeholders/logo.svg"
+                  src="/placeholders/logo.jpg"
                   alt="Relentless Logo"
-                  width={36}
-                  height={36}
+                  width={40}
+                  height={40}
                   className="w-full h-full object-contain"
                 />
               </div>
