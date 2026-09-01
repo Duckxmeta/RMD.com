@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og.jpg",
+        url: "https://www.relentlessmobiledetails.com/rmdlogo.jpg",
         width: 1200,
         height: 630,
         alt: "Relentless Mobile Details",
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
     description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
-    images: ["/og.jpg"],
+    images: ["https://www.relentlessmobiledetails.com/rmdlogo.jpg"],
   },
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/rmdlogo.jpg",
+    apple: "/rmdlogo.jpg",
   },
   robots: {
     index: true,

@@ -7,7 +7,8 @@ export function generateLocalBusinessSchema() {
     "name": siteConfig.name,
     "alternateName": siteConfig.altName,
     "url": siteConfig.siteUrl,
-    "logo": `${siteConfig.siteUrl}/placeholders/logo.svg`,
+    "logo": "https://www.relentlessmobiledetails.com/rmdlogo.jpg",
+    "image": "https://www.relentlessmobiledetails.com/rmdlogo.jpg",
     "description": siteConfig.meta.description,
     "telephone": siteConfig.phone,
     "founder": {
