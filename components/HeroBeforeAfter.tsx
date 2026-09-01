@@ -67,7 +67,7 @@ export function HeroBeforeAfter() {
             <div className="inline-flex items-center space-x-2 bg-dark-800/80 border border-red-500/30 px-3.5 py-1.5 rounded-full">
               <Sparkles className="w-4 h-4 text-red-400 animate-pulse" />
               <span className="text-xs sm:text-sm font-semibold text-gray-200 tracking-wide">
-                Locally Owned by Jordan Kinnett • We Come To You
+                Locally Owned by Jordan Kinnett & Houston Stephens • We Come To You
               </span>
             </div>
 

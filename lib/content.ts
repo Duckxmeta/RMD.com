@@ -32,11 +32,19 @@ export interface TrustItem {
   subtitle: string;
 }
 
+export interface ReviewItem {
+  id: string;
+  author: string;
+  source: string;
+  rating: number;
+  quote: string;
+}
+
 export const siteConfig = {
   name: "Relentless Mobile Details",
   altName: "Relentless Mobile Details - Upper Cumberland",
   googleLabel: "Relentless Mobile Details - Cookeville",
-  owner: "Jordan Kinnett",
+  owner: "Jordan Kinnett and Houston Stephens",
   tagline: "We come to you, and leave it looking brand new.",
   heroHeadline: "Cookeville’s premier mobile detail.",
   heroSubhead: "We come to you, and leave it looking brand new.",
@@ -72,7 +80,7 @@ export const siteConfig = {
     keywords: [
       "Mobile Detailing Cookeville TN",
       "Auto Detailing Upper Cumberland",
-      "Car Detailing Jordan Kinnett",
+      "Car Detailing Jordan Kinnett Houston Stephens",
       "Mobile Wash Cookeville",
       "Paint Correction Upper Cumberland",
       "Ceramic Coating Cookeville"
@@ -91,7 +99,7 @@ export const siteConfig = {
     },
     {
       title: "Upper Cumberland Local",
-      subtitle: "Locally owned & operated by Jordan Kinnett",
+      subtitle: "Locally owned & operated by Jordan Kinnett and Houston Stephens",
     },
     {
       title: "Satisfaction Guaranteed",
@@ -257,12 +265,67 @@ export const siteConfig = {
     },
   ] as GalleryItem[],
 
+  reviewsSummary: {
+    heading: "What customers say",
+    subhead: "4.9 out of 5 on Google · 18 reviews",
+    rating: 4.9,
+    reviewCount: 18,
+    sourceName: "Relentless Mobile Details - Cookeville",
+    googleUrl: "https://share.google/rQXnT7gzP4VrXdZph",
+    buttonText: "Read all Google reviews →",
+  },
+
+  reviews: [
+    {
+      id: "rev-1",
+      author: "Cindy Reilly",
+      source: "Google",
+      rating: 5,
+      quote: "This team did a fantastic job making my son’s nearly 15-year-old car look nearly brand new. Inside and outside the attention to detail was noteworthy. They made the outside glow, including sparkling clean wheel wells.",
+    },
+    {
+      id: "rev-2",
+      author: "Stacy Rogers",
+      source: "Google",
+      rating: 5,
+      quote: "These guys really did an amazing job with my Ford Edge. They came to my house and were set up in minutes. Parts of my carpet and mats I was sure were ruined look new again. On time, didn’t rush, didn’t overcharge.",
+    },
+    {
+      id: "rev-3",
+      author: "elizabeth rodgers",
+      source: "Google",
+      rating: 5,
+      quote: "My car looks like it did coming out of the dealership. They came to me. Much better job than the established places in Cookeville and for less money. I would not use anyone else.",
+    },
+    {
+      id: "rev-4",
+      author: "David Stepp",
+      source: "Google",
+      rating: 5,
+      quote: "I’ve had cars detailed all over the country and I’m highly impressed. I was concerned about mobile versus a shop. Those concerns are gone — fantastic job outside, inside, and under the hood.",
+    },
+    {
+      id: "rev-5",
+      author: "Brenda Zimmerman",
+      source: "Google",
+      rating: 5,
+      quote: "I was hesitant to use a mobile detailing service. I am 100% satisfied. My car looks like it just came off a showroom floor. They arrived on time and were professional and polite.",
+    },
+    {
+      id: "rev-6",
+      author: "David Francis",
+      source: "Google",
+      rating: 5,
+      quote: "Jordan was great. He cleaned my RV. He did exactly what he said he would do, when he said he would do it, and he did it right the first time.",
+    },
+  ] as ReviewItem[],
+
   about: {
-    title: "Locally Owned Quality by Jordan Kinnett",
-    paragraph1: "Relentless Mobile Details is Cookeville’s premier mobile auto detailer, locally owned and operated by Jordan Kinnett. We serve Cookeville and communities across the Upper Cumberland, TN.",
+    title: "Locally Owned Quality by Jordan Kinnett & Houston Stephens",
+    paragraph1: "Relentless Mobile Details is Cookeville’s premier mobile auto detailer, locally owned and operated by Jordan Kinnett and Houston Stephens. We serve Cookeville and communities across the Upper Cumberland, TN.",
     paragraph2: "We bring our entire professional setup directly to your home or workplace. From quick interior/exterior upkeep to full details, paint correction, ceramic coatings, and headlight restoration—we come to you with satisfaction guaranteed.",
     bulletPoints: [
-      "Locally owned and operated by Jordan Kinnett",
+      "Locally owned and operated by Jordan Kinnett and Houston Stephens",
       "We come directly to your home or workplace",
       "Satisfaction guaranteed on every detail",
     ]
