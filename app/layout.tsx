@@ -19,34 +19,38 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.meta.title,
-  description: siteConfig.meta.description,
+  metadataBase: new URL("https://www.relentlessmobiledetails.com"),
+  title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
+  description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
   keywords: siteConfig.meta.keywords,
-  metadataBase: new URL(siteConfig.siteUrl),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: siteConfig.meta.title,
-    description: siteConfig.meta.description,
-    url: siteConfig.siteUrl,
-    siteName: siteConfig.name,
+    title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
+    description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
+    url: "https://www.relentlessmobiledetails.com",
+    siteName: "Relentless Mobile Details",
+    type: "website",
+    locale: "en_US",
     images: [
       {
-        url: "/placeholders/hero-after.jpg",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Relentless Mobile Details Cookeville TN",
+        alt: "Relentless Mobile Details",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.meta.title,
-    description: siteConfig.meta.description,
-    images: ["/placeholders/hero-after.jpg"],
+    title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
+    description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
+    images: ["/og.jpg"],
+  },
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
   },
   robots: {
     index: true,

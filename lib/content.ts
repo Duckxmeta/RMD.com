@@ -40,8 +40,8 @@ export const siteConfig = {
   tagline: "We come to you, and leave it looking brand new.",
   heroHeadline: "Cookeville’s premier mobile detail.",
   heroSubhead: "We come to you. Satisfaction guaranteed.",
-  domain: "relentlessmobiledetails.com",
-  siteUrl: "https://relentlessmobiledetails.com",
+  domain: "www.relentlessmobiledetails.com",
+  siteUrl: "https://www.relentlessmobiledetails.com",
   phone: "(931) 284-9355",
   phoneRaw: "9312849355",
   phoneInt: "+19312849355",
@@ -68,7 +68,7 @@ export const siteConfig = {
 
   meta: {
     title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "Cookeville's premier mobile auto detailing by Jordan Kinnett. Interior, exterior, full details, paint correction, ceramic coating & headlight restoration.",
+    description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
     keywords: [
       "Mobile Detailing Cookeville TN",
       "Auto Detailing Upper Cumberland",
