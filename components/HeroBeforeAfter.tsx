@@ -142,7 +142,7 @@ export function HeroBeforeAfter() {
                 {/* AFTER Image (Bottom Layer) */}
                 <div className="absolute inset-0 w-full h-full">
                   <Image
-                    src="/placeholders/hero-after.jpg"
+                    src="/hero-after.jpg"
                     alt="After detailing - Relentless Mobile Details"
                     fill
                     className="object-cover"
@@ -160,7 +160,7 @@ export function HeroBeforeAfter() {
                 >
                   <div className="relative w-full h-full min-w-full">
                     <Image
-                      src="/placeholders/hero-before.jpg"
+                      src="/hero-before.jpg"
                       alt="Before detailing - Relentless Mobile Details"
                       fill
                       className="object-cover"
