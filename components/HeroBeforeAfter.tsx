@@ -76,13 +76,13 @@ export function HeroBeforeAfter() {
               Cookeville’s premier <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">mobile detail.</span>
             </h1>
 
-            {/* Subhead */}
-            <p className="text-lg sm:text-xl text-gray-200 font-semibold leading-relaxed">
-              {siteConfig.heroSubhead}
+            {/* Slogan Subhead */}
+            <p className="text-lg sm:text-2xl text-red-400 font-bold leading-relaxed">
+              "{siteConfig.tagline}"
             </p>
 
-            <p className="text-sm text-gray-400 leading-relaxed max-w-2xl">
-              Interior, exterior, full details, paint correction, ceramic coating, and headlight restoration. Delivered straight to your driveway or workplace in Cookeville & Upper Cumberland.
+            <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-2xl">
+              Interior, exterior, full details, paint correction, ceramic coating, and headlight restoration. Delivered straight to your driveway or workplace in Cookeville & Upper Cumberland with satisfaction guaranteed.
             </p>
 
             {/* Service requirement note */}

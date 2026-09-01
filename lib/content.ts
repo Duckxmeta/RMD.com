@@ -39,7 +39,7 @@ export const siteConfig = {
   owner: "Jordan Kinnett",
   tagline: "We come to you, and leave it looking brand new.",
   heroHeadline: "Cookeville’s premier mobile detail.",
-  heroSubhead: "We come to you. Satisfaction guaranteed.",
+  heroSubhead: "We come to you, and leave it looking brand new.",
   domain: "www.relentlessmobiledetails.com",
   siteUrl: "https://www.relentlessmobiledetails.com",
   phone: "(931) 284-9355",
