@@ -9,7 +9,7 @@ export function GallerySection() {
   const [selectedFilter, setSelectedFilter] = useState<string>("All");
   const [activeLightbox, setActiveLightbox] = useState<GalleryItem | null>(null);
 
-  const categories = ["All", "Headlights", "Exterior", "Interior", "Paint Correction", "Ceramic"];
+  const categories = ["All", "Headlights", "Interior", "Exterior"];
 
   const filteredGallery = selectedFilter === "All"
     ? siteConfig.gallery
@@ -49,13 +49,13 @@ export function GallerySection() {
           </div>
         </div>
 
-        {/* Responsive Grid */}
+        {/* Simple Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredGallery.map((item) => (
             <div
               key={item.id}
               onClick={() => setActiveLightbox(item)}
-              className="group relative bg-dark-900 border border-dark-700/80 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:border-red-500/50 transition-all duration-300 transform hover:-translate-y-1"
+              className="group relative bg-dark-900 border border-dark-700/80 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:border-red-500/50 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between"
             >
               {/* Image Thumbnail */}
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-dark-850">
@@ -74,14 +74,14 @@ export function GallerySection() {
                 </div>
 
                 {/* Category tag */}
-                <div className="absolute top-3 left-3 bg-dark-950/80 text-gray-300 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md backdrop-blur-sm border border-gray-700">
+                <div className="absolute top-3 left-3 bg-dark-950/85 text-gray-200 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md backdrop-blur-sm border border-gray-700">
                   {item.category}
                 </div>
               </div>
 
               {/* Caption */}
               <div className="p-4 bg-dark-900 border-t border-dark-800">
-                <h3 className="text-sm font-bold text-white group-hover:text-red-400 transition-colors">
+                <h3 className="text-xs sm:text-sm font-bold text-white group-hover:text-red-400 transition-colors leading-tight">
                   {item.title}
                 </h3>
                 <p className="text-xs text-gray-400 mt-1">
