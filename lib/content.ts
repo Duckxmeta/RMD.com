@@ -3,6 +3,7 @@ export interface PackageItem {
   name: string;
   price: string;
   priceNote?: string;
+  startingPrices?: { label: string; price: string }[];
   badge?: string;
   popular?: boolean;
   description: string;
@@ -48,6 +49,7 @@ export const siteConfig = {
   tagline: "We come to you, and leave it looking brand new.",
   heroHeadline: "Cookeville’s premier mobile detail.",
   heroSubhead: "We come to you, and leave it looking brand new.",
+  heroPricingSummary: "Cars $225–$275 · SUV/truck $250–$300",
   domain: "www.relentlessmobiledetails.com",
   siteUrl: "https://www.relentlessmobiledetails.com",
   phone: "(931) 284-9355",
@@ -76,7 +78,7 @@ export const siteConfig = {
 
   meta: {
     title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
+    description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
     keywords: [
       "Mobile Detailing Cookeville TN",
       "Auto Detailing Upper Cumberland",
@@ -116,8 +118,13 @@ export const siteConfig = {
     {
       id: "relentless-full-detail",
       name: "Relentless Full Detail",
-      price: "Cars starting at $200–$250",
-      priceNote: "Price depends on vehicle condition and add-ons. Call or text for truck & SUV pricing.",
+      price: "Cars $225–$275 · SUV/truck $250–$300",
+      priceNote: "Prices may vary depending on vehicle condition and location.",
+      startingPrices: [
+        { label: "Cars", price: "$225–$275" },
+        { label: "SUV / truck", price: "$250–$300" },
+        { label: "Vans & larger 3rd-row SUVs", price: "$275–$325" },
+      ],
       popular: true,
       badge: "FEATURED PACKAGE",
       description: "Our complete signature interior & exterior deep clean and restoration.",

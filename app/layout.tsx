@@ -21,14 +21,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.relentlessmobiledetails.com"),
   title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-  description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
+  description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
   keywords: siteConfig.meta.keywords,
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
+    description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
     url: "https://www.relentlessmobiledetails.com",
     siteName: "Relentless Mobile Details",
     type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "We come to you, and leave it looking brand new. Full details from $200–$250. Call or text (931) 284-9355.",
+    description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
     images: ["https://www.relentlessmobiledetails.com/rmdlogo.jpg"],
   },
   icons: {

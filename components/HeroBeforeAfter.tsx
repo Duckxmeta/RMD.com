@@ -85,10 +85,17 @@ export function HeroBeforeAfter() {
               Interior, exterior, full details, paint correction, ceramic coating, and headlight restoration. Delivered straight to your driveway or workplace in Cookeville & Upper Cumberland with satisfaction guaranteed.
             </p>
 
-            {/* Service requirement note */}
-            <div className="flex items-start space-x-2.5 bg-dark-900/80 border border-dark-700/80 p-3 rounded-lg text-xs sm:text-sm text-gray-300">
-              <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
-              <span>We come to your home or work. Water and power access preferred.</span>
+            {/* Service requirement & pricing note */}
+            <div className="space-y-2">
+              <div className="flex items-start space-x-2.5 bg-dark-900/80 border border-dark-700/80 p-3 rounded-lg text-xs sm:text-sm text-gray-300">
+                <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                <span>We come to your home or work. Water and power access preferred.</span>
+              </div>
+
+              <div className="flex items-center space-x-2.5 bg-dark-900/90 border border-red-500/30 px-3.5 py-2.5 rounded-lg text-xs sm:text-sm text-gray-200 font-medium">
+                <span className="text-red-400 font-bold uppercase tracking-wider text-[11px]">Full Detail Starting:</span>
+                <span>Cars $225–$275 · SUV/truck $250–$300</span>
+              </div>
             </div>
 
             {/* Action CTAs */}

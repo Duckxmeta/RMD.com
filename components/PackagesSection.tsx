@@ -51,12 +51,27 @@ export function PackagesSection() {
                 </p>
 
                 {/* Price Lockup */}
-                <div className="mt-5 space-y-1">
-                  <div className="text-2xl sm:text-3xl font-heading font-black text-white leading-tight">
-                    {pkg.price}
-                  </div>
+                <div className="mt-5 space-y-3">
+                  {pkg.startingPrices ? (
+                    <div className="bg-dark-950/90 border border-dark-700 p-3.5 rounded-xl space-y-1.5">
+                      <p className="text-[11px] font-bold text-red-400 uppercase tracking-wider mb-1">
+                        Starting prices:
+                      </p>
+                      {pkg.startingPrices.map((sp, idx) => (
+                        <div key={idx} className="flex justify-between items-center text-xs sm:text-sm">
+                          <span className="text-gray-300 font-medium">{sp.label}:</span>
+                          <span className="text-white font-bold">{sp.price}</span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-2xl sm:text-3xl font-heading font-black text-white leading-tight">
+                      {pkg.price}
+                    </div>
+                  )}
+
                   {pkg.priceNote && (
-                    <p className="text-xs text-red-300/90 font-medium">
+                    <p className="text-[11px] text-gray-400 italic leading-snug pt-1">
                       {pkg.priceNote}
                     </p>
                   )}

@@ -308,7 +308,7 @@ Notes: ${formData.message || "None"}`;
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full bg-dark-950 border border-dark-700 focus:border-red-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors"
                     >
-                      <option value="Relentless Full Detail">Relentless Full Detail (Cars starting at $200–$250)</option>
+                      <option value="Relentless Full Detail">Relentless Full Detail (Cars $225–$275 · SUV/truck $250–$300)</option>
                       <option value="Exterior Detail">Exterior Detail (Call/text for pricing)</option>
                       <option value="Interior Detail">Interior Detail (Call/text for pricing)</option>
                       <option value="Paint Correction">Paint Correction</option>
