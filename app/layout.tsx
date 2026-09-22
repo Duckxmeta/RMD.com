@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
   description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
   keywords: siteConfig.meta.keywords,
+  authors: [{ name: "Kyle Kinkin", url: "https://www.justduckit.xyz/work" }],
+  creator: "Kyle Kinkin",
+  publisher: "Kyle Kinkin",
   alternates: {
     canonical: "/",
   },
@@ -68,6 +71,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable}`}>
       <head>
+        <meta name="author" content="Kyle Kinkin - https://www.justduckit.xyz/work" />
+        <meta name="developer" content="Website built by Kyle Kinkin (https://www.justduckit.xyz/work)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

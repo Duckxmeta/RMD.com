@@ -149,10 +149,23 @@ export function Footer() {
 
         </div>
 
-        {/* Bottom Copyright & Fee Note */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        {/* Bottom Copyright, Developer Credit & Fee Note */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <div>
             © {currentYear} {siteConfig.name}. All rights reserved.
+          </div>
+
+          {/* Small Developer Tag */}
+          <div className="text-center text-gray-400">
+            Website Built by{" "}
+            <a
+              href="https://www.justduckit.xyz/work"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-200 hover:text-red-400 font-semibold underline underline-offset-2 transition-colors"
+            >
+              Kyle Kinkin
+            </a>
           </div>
 
           <div className="flex items-center space-x-1.5 bg-dark-900 border border-dark-800 px-3 py-1.5 rounded-lg text-gray-400 text-[11px]">

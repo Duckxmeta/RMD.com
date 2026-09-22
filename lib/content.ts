@@ -46,6 +46,10 @@ export const siteConfig = {
   altName: "Relentless Mobile Details - Upper Cumberland",
   googleLabel: "Relentless Mobile Details - Cookeville",
   owner: "Jordan Kinnett and Houston Stephens",
+  developer: {
+    name: "Kyle Kinkin",
+    url: "https://www.justduckit.xyz/work",
+  },
   tagline: "We come to you, and leave it looking brand new.",
   heroHeadline: "Cookeville’s premier mobile detail.",
   heroSubhead: "We come to you, and leave it looking brand new.",
