@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/content";
-import { generateLocalBusinessSchema } from "@/lib/schema";
+import { generateLocalBusinessSchema, generateFaqSchema } from "@/lib/schema";
 import { StickyTopBar } from "@/components/StickyTopBar";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -20,8 +20,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.relentlessmobiledetails.com"),
-  title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-  description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
+  title: siteConfig.meta.title,
+  description: siteConfig.meta.description,
   keywords: siteConfig.meta.keywords,
   authors: [{ name: "Kyle Kinkin", url: "https://www.justduckit.xyz/work" }],
   creator: "Kyle Kinkin",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
+    title: siteConfig.meta.title,
+    description: siteConfig.meta.description,
     url: "https://www.relentlessmobiledetails.com",
     siteName: "Relentless Mobile Details",
     type: "website",
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
+    title: siteConfig.meta.title,
+    description: siteConfig.meta.description,
     images: ["https://www.relentlessmobiledetails.com/rmdlogo.jpg"],
   },
   icons: {
@@ -66,7 +66,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const schemaData = generateLocalBusinessSchema();
+  const localBusinessSchema = generateLocalBusinessSchema();
+  const faqSchema = generateFaqSchema();
 
   return (
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable}`}>
@@ -75,7 +76,11 @@ export default function RootLayout({
         <meta name="developer" content="Website built by Kyle Kinkin (https://www.justduckit.xyz/work)" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen flex flex-col">

@@ -8,6 +8,7 @@ import { VideoShowcase } from "@/components/VideoShowcase";
 import { GallerySection } from "@/components/GallerySection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { AboutSection } from "@/components/AboutSection";
+import { FaqSection } from "@/components/FaqSection";
 import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <GallerySection />
       <ReviewsSection />
       <AboutSection />
+      <FaqSection />
       <ContactSection />
     </>
   );

@@ -41,6 +41,12 @@ export interface ReviewItem {
   quote: string;
 }
 
+export interface FaqItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
 export const siteConfig = {
   name: "Relentless Mobile Details",
   altName: "Relentless Mobile Details - Upper Cumberland",
@@ -81,22 +87,32 @@ export const siteConfig = {
   paymentNote: "Card payments include a processing fee.",
 
   meta: {
-    title: "Relentless Mobile Details | Mobile Detailing Cookeville, TN",
-    description: "We come to you, and leave it looking brand new. Full details: Cars $225–$275 · SUV/truck $250–$300. Call or text (931) 284-9355.",
+    title: "Mobile Car Detailing in Cookeville, TN | Relentless Mobile Details",
+    description: "Mobile car detailing in Cookeville and the Upper Cumberland. Full details from $225. We come to you. Call (931) 284-9355.",
     keywords: [
-      "Mobile Detailing Cookeville TN",
+      "Mobile Car Detailing Cookeville TN",
       "Auto Detailing Upper Cumberland",
       "Car Detailing Jordan Kinnett Houston Stephens",
       "Mobile Wash Cookeville",
       "Paint Correction Upper Cumberland",
       "Ceramic Coating Cookeville",
-      "Headlight Restoration Cookeville"
+      "Headlight Restoration Cookeville",
+      "Algood TN detailing",
+      "Baxter TN detailing",
+      "Crossville TN detailing",
+      "Sparta TN detailing",
+      "Monterey TN detailing"
     ],
   },
 
   serviceAreas: [
     "Cookeville",
-    "Upper Cumberland Region"
+    "Algood",
+    "Baxter",
+    "Crossville",
+    "Sparta",
+    "Monterey",
+    "Upper Cumberland, TN"
   ],
 
   trustPoints: [
@@ -209,6 +225,34 @@ export const siteConfig = {
       iconName: "ShieldCheck",
     },
   ] as AddonItem[],
+
+  faqs: [
+    {
+      id: "faq-1",
+      question: "How much is a full mobile detail in Cookeville?",
+      answer: "Cars $225–$275, SUV/truck $250–$300, vans and larger 3rd-row SUVs $275–$325. Prices vary by condition and location.",
+    },
+    {
+      id: "faq-2",
+      question: "Do you come to me?",
+      answer: "Yes. We come to your home or workplace in Cookeville and the Upper Cumberland. Water and power access preferred.",
+    },
+    {
+      id: "faq-3",
+      question: "What is included in a full detail?",
+      answer: "Hand wash, hand dry, tires and rims, entire interior vac including trunk, interior wipe down, windows, tires dressed, interior dressed, leather conditioned, shampoo, trunk wiped down and dressed including spare, engine bay wiped down and degreased, engine bay dressed, and wax.",
+    },
+    {
+      id: "faq-4",
+      question: "Do you offer ceramic coating, paint correction, headlight restoration?",
+      answer: "Yes, we offer paint correction, ceramic coating, and headlight restoration. Call or text (931) 284-9355 for a custom quote.",
+    },
+    {
+      id: "faq-5",
+      question: "How do I book?",
+      answer: "Call or text (931) 284-9355.",
+    },
+  ] as FaqItem[],
 
   gallery: [
     {
@@ -366,11 +410,11 @@ export const siteConfig = {
 
   about: {
     title: "Locally Owned Quality by Jordan Kinnett & Houston Stephens",
-    paragraph1: "Relentless Mobile Details is Cookeville’s premier mobile auto detailer, locally owned and operated by Jordan Kinnett and Houston Stephens. We serve Cookeville and communities across the Upper Cumberland, TN.",
+    paragraph1: "Relentless Mobile Details is Cookeville’s premier mobile auto detailer, locally owned and operated by Jordan Kinnett and Houston Stephens. We serve Cookeville, Algood, Baxter, Crossville, Sparta, Monterey, and communities across the Upper Cumberland, TN.",
     paragraph2: "We bring our entire professional setup directly to your home or workplace. From quick interior/exterior upkeep to full details, paint correction, ceramic coatings, and headlight restoration—we come to you with satisfaction guaranteed.",
     bulletPoints: [
       "Locally owned and operated by Jordan Kinnett and Houston Stephens",
-      "We come directly to your home or workplace",
+      "We come directly to your home or workplace across Cookeville & Upper Cumberland",
       "Satisfaction guaranteed on every detail",
     ]
   }
