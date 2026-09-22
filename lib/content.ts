@@ -351,6 +351,30 @@ export const siteConfig = {
       caption: "Exterior hydrophobic paint shine",
       alt: "Exterior ceramic paint shine",
     },
+    {
+      id: "gal-ext-5",
+      title: "Exterior — Ford Raptor Full Detail",
+      category: "Exterior",
+      imagePath: "/truck/raptor-detail-1.jpeg",
+      caption: "Ford F-150 Raptor full exterior detail & tire dress",
+      alt: "Black Ford F-150 Raptor detailed truck",
+    },
+    {
+      id: "gal-ext-6",
+      title: "Exterior — Ford Raptor High-Gloss Finish",
+      category: "Exterior",
+      imagePath: "/truck/raptor-detail-2.jpeg",
+      caption: "Ford Raptor high-gloss paint & window reflection",
+      alt: "Detailed Ford Raptor truck front angle",
+    },
+    {
+      id: "gal-team-1",
+      title: "RMD Team — Official Relentless Uniform",
+      category: "Exterior",
+      imagePath: "/team/rmd-team-shirt.jpeg",
+      caption: "Official Relentless Mobile Details shirt on location",
+      alt: "Relentless Mobile Details team member in official shirt",
+    },
   ] as GalleryItem[],
 
   reviewsSummary: {

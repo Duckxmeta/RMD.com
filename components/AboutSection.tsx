@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, MapPin, Wrench } from "lucide-react";
+import Image from "next/image";
+import { CheckCircle2, MapPin, Wrench, Shield } from "lucide-react";
 import { siteConfig } from "@/lib/content";
 
 export function AboutSection() {
@@ -10,32 +11,58 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Visual Highlight Box */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-dark-850 to-dark-950 border border-dark-700/80 p-8 rounded-3xl relative overflow-hidden shadow-xl">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-full blur-2xl pointer-events-none" />
-            
-            <div className="space-y-6 relative z-10">
-              <div className="p-3 bg-red-950/80 border border-red-800/60 rounded-2xl w-fit">
-                <Wrench className="w-8 h-8 text-red-500" />
-              </div>
+          {/* Left Column: Visual Highlight Box with Team Photo */}
+          <div className="lg:col-span-5 space-y-6">
+            <div className="bg-gradient-to-br from-dark-850 to-dark-950 border border-dark-700/80 p-6 sm:p-8 rounded-3xl relative overflow-hidden shadow-xl">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-full blur-2xl pointer-events-none" />
               
-              <h3 className="text-2xl font-heading font-black text-white">
-                Mobile detailing engineered around your day.
-              </h3>
+              <div className="space-y-6 relative z-10">
+                <div className="p-3 bg-red-950/80 border border-red-800/60 rounded-2xl w-fit">
+                  <Wrench className="w-8 h-8 text-red-500" />
+                </div>
+                
+                <h3 className="text-2xl font-heading font-black text-white">
+                  Mobile detailing engineered around your day.
+                </h3>
 
-              <div className="space-y-4 pt-2">
-                {siteConfig.about.bulletPoints.map((bp, i) => (
-                  <div key={i} className="flex items-start space-x-3 text-sm text-gray-200">
-                    <CheckCircle2 className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
-                    <span>{bp}</span>
-                  </div>
-                ))}
+                <div className="space-y-4 pt-2">
+                  {siteConfig.about.bulletPoints.map((bp, i) => (
+                    <div key={i} className="flex items-start space-x-3 text-sm text-gray-200">
+                      <CheckCircle2 className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                      <span>{bp}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Service Requirement Box */}
+                <div className="mt-6 p-4 rounded-xl bg-dark-900 border border-red-900/40 text-xs sm:text-sm text-red-200">
+                  <span className="font-bold text-red-400 block mb-1">Service Requirement Note:</span>
+                  We come to your home or work. Water and power access preferred.
+                </div>
               </div>
+            </div>
 
-              {/* Service Requirement Box */}
-              <div className="mt-6 p-4 rounded-xl bg-dark-900 border border-red-900/40 text-xs sm:text-sm text-red-200">
-                <span className="font-bold text-red-400 block mb-1">Service Requirement Note:</span>
-                We come to your home or work. Water and power access preferred.
+            {/* Team Apparel Photo Card */}
+            <div className="bg-dark-950 border border-dark-700/80 p-4 rounded-2xl shadow-lg flex items-center space-x-4">
+              <div className="relative w-24 h-24 rounded-xl overflow-hidden bg-dark-900 shrink-0 border border-dark-700">
+                <Image
+                  src="/team/rmd-team-shirt.jpeg"
+                  alt="Relentless Mobile Details Official Shirt"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="space-y-1">
+                <div className="inline-flex items-center space-x-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
+                  <Shield className="w-3.5 h-3.5" />
+                  <span>Official RMD Gear</span>
+                </div>
+                <h4 className="text-sm font-bold text-white leading-snug">
+                  Professional On-Site Team
+                </h4>
+                <p className="text-xs text-gray-400">
+                  Uniformed detailing specialists equipped with professional gear on every job.
+                </p>
               </div>
             </div>
           </div>
