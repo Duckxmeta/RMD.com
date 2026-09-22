@@ -369,11 +369,11 @@ export const siteConfig = {
     },
     {
       id: "gal-team-1",
-      title: "RMD Team — Official Relentless Uniform",
+      title: "RMD Team — Official Company Swag",
       category: "Exterior",
-      imagePath: "/team/rmd-team-shirt.jpeg",
-      caption: "Official Relentless Mobile Details shirt on location",
-      alt: "Relentless Mobile Details team member in official shirt",
+      imagePath: "/team/rmd-company-swag.jpeg",
+      caption: "Employee wearing official Relentless Mobile Details company swag on location",
+      alt: "Relentless Mobile Details employee wearing official company swag shirt",
     },
   ] as GalleryItem[],
 

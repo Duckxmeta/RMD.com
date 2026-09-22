@@ -46,8 +46,8 @@ export function AboutSection() {
             <div className="bg-dark-950 border border-dark-700/80 p-4 rounded-2xl shadow-lg flex items-center space-x-4">
               <div className="relative w-24 h-24 rounded-xl overflow-hidden bg-dark-900 shrink-0 border border-dark-700">
                 <Image
-                  src="/team/rmd-team-shirt.jpeg"
-                  alt="Relentless Mobile Details Official Shirt"
+                  src="/team/rmd-company-swag.jpeg"
+                  alt="Employee wearing Relentless Mobile Details official company swag shirt"
                   fill
                   className="object-cover"
                 />
@@ -55,13 +55,13 @@ export function AboutSection() {
               <div className="space-y-1">
                 <div className="inline-flex items-center space-x-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
                   <Shield className="w-3.5 h-3.5" />
-                  <span>Official RMD Gear</span>
+                  <span>Official RMD Company Swag</span>
                 </div>
                 <h4 className="text-sm font-bold text-white leading-snug">
-                  Professional On-Site Team
+                  Employee Wearing Company Swag
                 </h4>
                 <p className="text-xs text-gray-400">
-                  Uniformed detailing specialists equipped with professional gear on every job.
+                  Uniformed detailing specialists equipped with official Relentless Mobile Details gear on every job.
                 </p>
               </div>
             </div>
